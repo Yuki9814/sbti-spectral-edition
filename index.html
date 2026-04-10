@@ -15,19 +15,171 @@
   <main class="shell">
     <section id="intro" class="screen active">
       <div class="hero card reveal">
+        <div class="hero-ribbon hero-ribbon-a"></div>
+        <div class="hero-ribbon hero-ribbon-b"></div>
+
         <div class="hero-copy">
           <div class="eyebrow">SBTI Personality Test</div>
-          <h1>SBTI 人格测试</h1>
+          <div class="hero-pill-row">
+            <span class="hero-pill">偏锋人格扫描</span>
+            <span class="hero-pill">嘴硬值检测</span>
+            <span class="hero-pill">抽象互联网体质</span>
+          </div>
+          <h1><span>SBTI</span><em>人格测试</em></h1>
           <p class="hero-sub">31 道题，15 个维度，一次偏锋、娱乐向的互联网人格扫描。</p>
 
-          <div class="hero-meta">
-            <span>31 道题</span>
-            <span>15 个维度</span>
-            <span>隐藏分支</span>
+          <div class="hero-note-board">
+            <article class="hero-note-card">
+              <strong>轻松娱乐向</strong>
+              <span>不是心理诊断，主打那种“被说中又不想承认”的互联网共鸣。</span>
+            </article>
+            <article class="hero-note-card">
+              <strong>节奏很快</strong>
+              <span>31 道题连续扫完，三分钟左右就能拿到一张完整结果海报。</span>
+            </article>
+            <article class="hero-note-card">
+              <strong>鼠标有反馈</strong>
+              <span>萌宠会偏头、冒泡、抖耳朵，你没开测也能先逗一会儿。</span>
+            </article>
           </div>
 
           <div class="hero-actions">
             <button id="startBtn" class="btn-primary">开始测试</button>
+            <button id="heroPetBtn" class="btn-secondary" type="button">唤醒萌宠</button>
+          </div>
+
+          <div class="hero-meta">
+            <span><strong>31</strong><small>道题快扫</small></span>
+            <span><strong>15</strong><small>维度拼图</small></span>
+            <span><strong>∞</strong><small>抽象浓度</small></span>
+          </div>
+
+          <div class="hero-orbit">
+            <span>恋爱脑</span>
+            <span>社交感</span>
+            <span>拧巴值</span>
+            <span>世界观</span>
+            <span>执行力</span>
+            <span>边界感</span>
+          </div>
+        </div>
+
+        <div class="pet-stage-head">
+          <div class="pet-stage-kicker">Mood Pets Online</div>
+          <p>每只小宠物都会跟着你的鼠标轻轻转头，点一下还会弹一下嘴碎两句。</p>
+        </div>
+
+        <div class="pet-stage" aria-label="互动萌宠区">
+          <div class="pet-shell pet-shell-a" data-pet-key="petA">
+            <div class="pet-bubble" id="petBubbleA">摸摸耳朵</div>
+            <div class="pet-scene">
+              <span class="pet-scene-ring"></span>
+              <span class="pet-scene-dot pet-scene-dot-a"></span>
+              <span class="pet-scene-dot pet-scene-dot-b"></span>
+              <div class="pet-avatar pet-avatar-cat" aria-hidden="true">
+                <span class="pet-ear pet-ear-left"></span>
+                <span class="pet-ear pet-ear-right"></span>
+                <span class="pet-tail"></span>
+                <span class="pet-body"></span>
+                <span class="pet-face">
+                  <span class="pet-eye pet-eye-left"></span>
+                  <span class="pet-eye pet-eye-right"></span>
+                  <span class="pet-mouth"></span>
+                  <span class="pet-blush pet-blush-left"></span>
+                  <span class="pet-blush pet-blush-right"></span>
+                </span>
+                <span class="pet-paw pet-paw-left"></span>
+                <span class="pet-paw pet-paw-right"></span>
+              </div>
+            </div>
+            <div class="pet-label">
+              <strong>云朵猫</strong>
+              <span>奶凶型陪测选手</span>
+            </div>
+          </div>
+
+          <div class="pet-shell pet-shell-b" data-pet-key="petB">
+            <div class="pet-bubble" id="petBubbleB">靠近一点</div>
+            <div class="pet-scene">
+              <span class="pet-scene-ring"></span>
+              <span class="pet-scene-dot pet-scene-dot-a"></span>
+              <span class="pet-scene-dot pet-scene-dot-b"></span>
+              <div class="pet-avatar pet-avatar-bunny" aria-hidden="true">
+                <span class="pet-ear pet-ear-left"></span>
+                <span class="pet-ear pet-ear-right"></span>
+                <span class="pet-tail"></span>
+                <span class="pet-body"></span>
+                <span class="pet-face">
+                  <span class="pet-eye pet-eye-left"></span>
+                  <span class="pet-eye pet-eye-right"></span>
+                  <span class="pet-mouth"></span>
+                  <span class="pet-blush pet-blush-left"></span>
+                  <span class="pet-blush pet-blush-right"></span>
+                </span>
+                <span class="pet-paw pet-paw-left"></span>
+                <span class="pet-paw pet-paw-right"></span>
+              </div>
+            </div>
+            <div class="pet-label">
+              <strong>薄荷兔</strong>
+              <span>最会盯着你看</span>
+            </div>
+          </div>
+
+          <div class="pet-shell pet-shell-c" data-pet-key="petC">
+            <div class="pet-bubble" id="petBubbleC">点我会弹</div>
+            <div class="pet-scene">
+              <span class="pet-scene-ring"></span>
+              <span class="pet-scene-dot pet-scene-dot-a"></span>
+              <span class="pet-scene-dot pet-scene-dot-b"></span>
+              <div class="pet-avatar pet-avatar-bear" aria-hidden="true">
+                <span class="pet-ear pet-ear-left"></span>
+                <span class="pet-ear pet-ear-right"></span>
+                <span class="pet-tail"></span>
+                <span class="pet-body"></span>
+                <span class="pet-face">
+                  <span class="pet-eye pet-eye-left"></span>
+                  <span class="pet-eye pet-eye-right"></span>
+                  <span class="pet-mouth"></span>
+                  <span class="pet-blush pet-blush-left"></span>
+                  <span class="pet-blush pet-blush-right"></span>
+                </span>
+                <span class="pet-paw pet-paw-left"></span>
+                <span class="pet-paw pet-paw-right"></span>
+              </div>
+            </div>
+            <div class="pet-label">
+              <strong>葡萄熊</strong>
+              <span>负责给你加点勇气</span>
+            </div>
+          </div>
+
+          <div class="pet-shell pet-shell-d" data-pet-key="petD">
+            <div class="pet-bubble" id="petBubbleD">别发呆啦</div>
+            <div class="pet-scene">
+              <span class="pet-scene-ring"></span>
+              <span class="pet-scene-dot pet-scene-dot-a"></span>
+              <span class="pet-scene-dot pet-scene-dot-b"></span>
+              <div class="pet-avatar pet-avatar-fox" aria-hidden="true">
+                <span class="pet-ear pet-ear-left"></span>
+                <span class="pet-ear pet-ear-right"></span>
+                <span class="pet-tail"></span>
+                <span class="pet-body"></span>
+                <span class="pet-face">
+                  <span class="pet-eye pet-eye-left"></span>
+                  <span class="pet-eye pet-eye-right"></span>
+                  <span class="pet-mouth"></span>
+                  <span class="pet-blush pet-blush-left"></span>
+                  <span class="pet-blush pet-blush-right"></span>
+                </span>
+                <span class="pet-paw pet-paw-left"></span>
+                <span class="pet-paw pet-paw-right"></span>
+              </div>
+            </div>
+            <div class="pet-label">
+              <strong>焦糖狐</strong>
+              <span>嘴比你还硬一点</span>
+            </div>
           </div>
         </div>
       </div>
