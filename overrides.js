@@ -75,12 +75,25 @@
     });
   }
 
+  function revealWithinScreen(name) {
+    const screen = document.getElementById(name);
+    if (!screen) {
+      return;
+    }
+    screen.querySelectorAll(".reveal").forEach((node) => {
+      node.classList.add("is-visible");
+    });
+  }
+
   function decorateQuestions() {
     document.querySelectorAll(".question").forEach((card, index) => {
       card.classList.add("reveal");
       card.style.transitionDelay = `${Math.min(index, 8) * 40}ms`;
     });
     observe(document);
+    if (document.getElementById("test")?.classList.contains("active")) {
+      requestAnimationFrame(() => revealWithinScreen("test"));
+    }
   }
 
   function setPoster(typeCode) {
@@ -122,7 +135,10 @@
     if (name !== "result") {
       delete document.body.dataset.resultTheme;
     }
-    requestAnimationFrame(() => observe(document));
+    requestAnimationFrame(() => {
+      observe(document);
+      revealWithinScreen(name);
+    });
   };
 
   observe(document);

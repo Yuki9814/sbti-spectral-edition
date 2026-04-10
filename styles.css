@@ -117,6 +117,11 @@ img {
   display: block;
 }
 
+.screen.active > .reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .card {
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);
@@ -187,10 +192,13 @@ p {
 }
 
 .hero-sub {
-  max-width: 36ch;
+  max-width: none;
   color: var(--muted);
   font-size: 17px;
-  line-height: 1.85;
+  line-height: 1.5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .hero-meta {
@@ -660,6 +668,9 @@ body[data-result-theme="neon"] {
 
   .hero-sub {
     font-size: 15px;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
   }
 
   .question,
