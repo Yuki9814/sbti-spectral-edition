@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SBTI Spectral Edition</title>
+  <meta name="description" content="把 SBTI 做成一场更锋利、更流动、更有质感的人格展演。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="ambient-grid"></div>
+
+  <main class="shell">
+    <section id="intro" class="screen active">
+      <div class="hero-shell card reveal">
+        <div class="hero-copy">
+          <div class="eyebrow">SBTI / Spectral Behavioral Type Index</div>
+          <h1>把人格测试，做成一场带镜面反射与流动光影的展厅。</h1>
+          <p class="hero-sub">
+            这不是把原版页面换个颜色。它保留了原来的题库和匹配逻辑，但把视觉层、动效层和图像叙事整体重做成更高密度、更像一场数字展陈的体验。
+          </p>
+
+          <div class="hero-stats">
+            <div class="stat-chip">
+              <span>15</span>
+              <small>维度矩阵</small>
+            </div>
+            <div class="stat-chip">
+              <span>25+</span>
+              <small>人格原型</small>
+            </div>
+            <div class="stat-chip">
+              <span>31</span>
+              <small>默认题量</small>
+            </div>
+            <div class="stat-chip">
+              <span>Hidden</span>
+              <small>分支彩蛋</small>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <button id="startBtn" class="btn-primary">开始测试</button>
+            <a class="btn-secondary" href="https://www.pexels.com/license/" target="_blank" rel="noreferrer">查看图片授权</a>
+          </div>
+        </div>
+
+        <div class="hero-gallery">
+          <a class="visual-card visual-card-large reveal" href="https://www.pexels.com/photo/white-and-black-hallway-with-glass-windows-8445619/" target="_blank" rel="noreferrer">
+            <img src="https://images.pexels.com/photos/2869215/pexels-photo-2869215.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1100&w=1600" alt="通透穹顶与酒店中庭">
+            <div class="visual-caption">
+              <strong>Glass Atrium</strong>
+              <span>Pexels / Spencer Lee</span>
+            </div>
+          </a>
+
+          <div class="visual-stack">
+            <a class="visual-card reveal" href="https://www.pexels.com/photo/white-and-black-hallway-with-glass-windows-8445619/" target="_blank" rel="noreferrer">
+              <img src="https://images.pexels.com/photos/15421330/pexels-photo-15421330.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1200&w=900" alt="暖色大理石走廊">
+              <div class="visual-caption">
+                <strong>Marble Axis</strong>
+                <span>Pexels / Berna Elif</span>
+              </div>
+            </a>
+
+            <a class="visual-card reveal" href="https://www.pexels.com/photo/nighttime-cityscape-with-illuminated-skyscrapers-35886056/" target="_blank" rel="noreferrer">
+              <img src="https://images.pexels.com/photos/35886060/pexels-photo-35886060.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1000&w=1400" alt="夜色城市建筑">
+              <div class="visual-caption">
+                <strong>Urban Afterglow</strong>
+                <span>Pexels / Arnold Nagy</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro-grid">
+        <article class="feature-card card reveal">
+          <div class="feature-kicker">Visual System</div>
+          <h2>不是网页皮肤，是整套视觉系统。</h2>
+          <p>重做颜色、层次、字体、玻璃面板、景深和按钮反馈，让结果页像一个可以被截图传播的数字海报，而不是普通表单页。</p>
+        </article>
+
+        <article class="feature-card card reveal">
+          <div class="feature-kicker">Motion Layer</div>
+          <h2>让页面自己呼吸，而不是机械跳转。</h2>
+          <p>背景光晕、卡片浮动、题卡渐显、结果切换和进度条呼应一起工作，整体节奏更接近“展陈体验”，不是“问卷系统”。</p>
+        </article>
+
+        <article class="feature-card card reveal">
+          <div class="feature-kicker">Source Links</div>
+          <h2>所有主图都能点开来源。</h2>
+          <p>站内保留可点击图片来源链接，后续放到公开仓库或 GitHub Pages 也能直接使用，不需要手工再补链接。</p>
+        </article>
+      </div>
+
+      <div class="resource-strip card reveal">
+        <div class="resource-copy">
+          <div class="feature-kicker">Image Sources</div>
+          <p>当前版本使用 Pexels 免费可用图片，下面这些链接都可直接打开查看原图页面。</p>
+        </div>
+        <div class="resource-links">
+          <a href="https://www.pexels.com/photo/white-and-black-hallway-with-glass-windows-8445619/" target="_blank" rel="noreferrer">Hallway / Spencer Lee</a>
+          <a href="https://www.pexels.com/photo/nighttime-cityscape-with-illuminated-skyscrapers-35886056/" target="_blank" rel="noreferrer">Night Skyline / Arnold Nagy</a>
+          <a href="https://www.pexels.com/photo/portrait-of-woman-with-shadows-on-face-5224561/" target="_blank" rel="noreferrer">Portrait / Ivan Aguilar</a>
+          <a href="https://www.pexels.com/photo/majestic-lion-statue-with-architectural-shadow-36352244/" target="_blank" rel="noreferrer">Lion Statue / Peter Dyllong</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="test" class="screen">
+      <div class="test-shell">
+        <aside class="test-aside card reveal">
+          <div class="feature-kicker">Test Protocol</div>
+          <h2>别急着快进。</h2>
+          <p>
+            题目仍然沿用原始逻辑，但我把答题环境做成了更稳定的沉浸式版面。你现在面对的不是“列表题”，而是一段逐层展开的画像构建过程。
+          </p>
+          <div class="aside-points">
+            <div>
+              <strong>Question Flow</strong>
+              <span>默认 31 题，隐藏分支会临时插入额外题目。</span>
+            </div>
+            <div>
+              <strong>Scoring</strong>
+              <span>15 个维度两两配对评分，最后映射到预设人格库。</span>
+            </div>
+            <div>
+              <strong>Output</strong>
+              <span>结果页会给出维度分布、匹配度与图像化人格海报。</span>
+            </div>
+          </div>
+        </aside>
+
+        <div class="test-wrap card reveal">
+          <div class="topbar">
+            <div class="progress"><span id="progressBar"></span></div>
+            <div class="progress-text" id="progressText">0 / 31</div>
+          </div>
+
+          <div id="questionList" class="question-list"></div>
+
+          <div class="actions-bottom">
+            <div class="hint" id="testHint">全部选完才会放行。世界已经够乱了，起码把题做完整。</div>
+            <div class="action-buttons">
+              <button id="backIntroBtn" class="btn-secondary">返回首页</button>
+              <button id="submitBtn" class="btn-primary" disabled>提交并查看结果</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="result" class="screen">
+      <div class="result-wrap card reveal">
+        <div class="result-banner">
+          <div>
+            <div class="feature-kicker">Result Snapshot</div>
+            <p>结果页的主视觉会根据人格类型切换气质素材，并保留可打开的图片来源链接。</p>
+          </div>
+          <div class="result-banner-links">
+            <a href="https://www.pexels.com/license/" target="_blank" rel="noreferrer">Pexels License</a>
+            <a href="https://www.pexels.com/" target="_blank" rel="noreferrer">Open Pexels</a>
+          </div>
+        </div>
+
+        <div class="result-layout">
+          <div class="result-top">
+            <div class="poster-box" id="posterBox">
+              <a id="posterAnchor" class="poster-anchor" href="#" target="_blank" rel="noreferrer">
+                <img id="posterImage" class="poster-image" alt="人格结果图">
+              </a>
+              <div class="poster-meta">
+                <div id="posterCaption" class="poster-caption">怎么样，被我拿捏了吧？</div>
+                <a id="posterSourceLink" class="poster-source" href="#" target="_blank" rel="noreferrer">查看图片来源</a>
+              </div>
+            </div>
+
+            <div class="type-box">
+              <div class="type-kicker" id="resultModeKicker">你的主类型</div>
+              <div class="type-name" id="resultTypeName">CTRL（拿捏者）</div>
+              <div class="match" id="matchBadge">匹配度 92%</div>
+              <div class="type-subname" id="resultTypeSub">系统备注会显示在这里。</div>
+              <div class="result-flavor" id="resultFlavor">这是一张带场景光感的结果海报，不再只是“图片 + 文案”的静态拼贴。</div>
+            </div>
+          </div>
+
+          <div class="analysis-box">
+            <h3>该人格的简单解读</h3>
+            <p id="resultDesc"></p>
+          </div>
+
+          <div class="dim-box">
+            <h3>十五维度评分</h3>
+            <div id="dimList" class="dim-list"></div>
+          </div>
+
+          <div class="note-box">
+            <h3>友情提示</h3>
+            <p id="funNote">本测试仅供娱乐，别拿它当诊断、面试、相亲、分手、招魂、算命或人生判决书。</p>
+          </div>
+
+          <details class="author-box">
+            <summary>作者的话</summary>
+            <div class="author-content">
+              <p>原始测试以强梗感和高密度互联网语言取胜；这个版本保留其锋利结构，但把视觉和节奏拉升到了更适合公开展示和截图传播的状态。</p>
+              <p>如果你准备把它公开放到 GitHub 上，这个页面已经把图片来源链接、资源组织和静态托管场景一并考虑进去了。</p>
+            </div>
+          </details>
+
+          <div class="credit-wall card">
+            <div class="feature-kicker">Current Visual Credits</div>
+            <div class="resource-links">
+              <a href="https://www.pexels.com/photo/white-and-black-hallway-with-glass-windows-8445619/" target="_blank" rel="noreferrer">Atrium / Spencer Lee</a>
+              <a href="https://www.pexels.com/photo/nighttime-cityscape-with-illuminated-skyscrapers-35886056/" target="_blank" rel="noreferrer">Skyline / Arnold Nagy</a>
+              <a href="https://www.pexels.com/photo/portrait-of-woman-with-shadows-on-face-5224561/" target="_blank" rel="noreferrer">Portrait / Ivan Aguilar</a>
+              <a href="https://www.pexels.com/photo/majestic-lion-statue-with-architectural-shadow-36352244/" target="_blank" rel="noreferrer">Lion / Peter Dyllong</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-actions">
+          <div class="action-buttons">
+            <button id="restartBtn" class="btn-secondary">重新测试</button>
+            <button id="toTopBtn" class="btn-primary">回到首页</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./main.js"></script>
+  <script src="./overrides.js"></script>
+</body>
+</html>
