@@ -28,7 +28,7 @@ body {
   margin: 0;
   min-height: 100vh;
   color: var(--text);
-  font-family: "Outfit", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: "YouYuan", "幼圆", "STYuanti-SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   background:
     radial-gradient(circle at 10% 12%, rgba(255, 190, 126, 0.38), transparent 22%),
     radial-gradient(circle at 88% 18%, rgba(105, 203, 214, 0.26), transparent 22%),
@@ -162,8 +162,8 @@ h1,
 h2,
 .type-name {
   margin: 0;
-  font-family: "Space Grotesk", "Noto Sans SC", sans-serif;
-  letter-spacing: -0.05em;
+  font-family: "YouYuan", "幼圆", "STYuanti-SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  letter-spacing: -0.03em;
   font-weight: 700;
 }
 
@@ -173,10 +173,10 @@ p {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 500px;
-  gap: 30px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
   padding: 34px;
-  min-height: 72vh;
+  min-height: auto;
   align-items: center;
   position: relative;
   overflow: hidden;
@@ -214,7 +214,7 @@ p {
 .hero-copy {
   display: grid;
   gap: 20px;
-  max-width: none;
+  max-width: 920px;
 }
 
 .hero h1 {
@@ -238,6 +238,13 @@ p {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
   max-width: 560px;
+}
+
+.hero-visual-wrap,
+.hero-gallery,
+.hero-card,
+.hero-sources {
+  display: none !important;
 }
 
 .hero-meta span,
@@ -578,8 +585,9 @@ p {
 
 .result-top {
   display: grid;
-  grid-template-columns: minmax(0, 0.96fr) minmax(0, 1.04fr);
+  grid-template-columns: minmax(280px, 380px) minmax(0, 1fr);
   gap: 18px;
+  align-items: start;
 }
 
 .poster-box,
@@ -615,8 +623,8 @@ p {
 
 .poster-anchor {
   display: block;
-  aspect-ratio: 4 / 5;
-  min-height: 360px;
+  aspect-ratio: 4 / 5.5;
+  min-height: 0;
   border-radius: 24px;
 }
 
@@ -647,6 +655,10 @@ p {
   line-height: 1.7;
 }
 
+#posterSourceLink {
+  display: none;
+}
+
 .type-box {
   display: grid;
   align-content: start;
@@ -665,7 +677,7 @@ p {
 }
 
 .type-name {
-  font-size: clamp(32px, 4.2vw, 62px);
+  font-size: clamp(30px, 3.8vw, 54px);
   line-height: 1.04;
   white-space: nowrap;
   overflow: hidden;
@@ -673,7 +685,7 @@ p {
 }
 
 .type-name.type-name-compact {
-  font-size: clamp(28px, 3.8vw, 52px);
+  font-size: clamp(24px, 3.2vw, 44px);
 }
 
 .match {
@@ -773,12 +785,6 @@ body[data-result-theme="pop"] {
   .hero {
     grid-template-columns: minmax(0, 1fr);
     min-height: auto;
-  }
-
-  .hero-visual-wrap,
-  .hero-sources {
-    justify-items: start;
-    justify-content: flex-start;
   }
 }
 
